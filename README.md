@@ -5,7 +5,8 @@ This is a guide to regain access to your digital ocean server:
  - The new password is sent to your email
  - click launch console
  - when asked for login credentials, the user is root or a user with similar priviledges
- - you will be prompted to enter your new password
+ - you will be prompted to enter your new password (enter the password sent to your email from digital ocean)
+ - after login you will immediately have to reset your password
  - after login: sudo nano /etc/ssh/sshd_config
  - look for PasswordAuthentication and change it from "no" to "yes" and save the file
  - restart the sshd service: sudo service ssh restart
